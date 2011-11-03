@@ -1,0 +1,7 @@
+# << URLs Amigaveis
+RewriteEngine on
+RewriteRule ^$ detail.php  
+RewriteRule ^img/(.*)\.png$ img/$1.png  [NC,L,QSA]
+RewriteRule ^(.*)_(.*)_(.*)\.png$ index.php?value=$3&color=$1&model=$2
+RewriteRule ^(.*)\.png$ index.php?value=$1&color=orange&model=4  [NC,L,QSA]
+# >> URLs Amigaveis
